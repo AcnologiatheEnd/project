@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require '../lib/gtx_1080.rb'
+
+GPU::CLI.new.call
