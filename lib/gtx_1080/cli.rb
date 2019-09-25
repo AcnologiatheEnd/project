@@ -28,7 +28,7 @@ class GPU::CLI
         GPU.find_item(find_input)
       
       elsif input == "done"
-        puts "T h a n k s!  C o m e  a g a i n  s o o n!"
+        puts "C o m e  a g a i n  s o o n!"
         exit!
 
       end
