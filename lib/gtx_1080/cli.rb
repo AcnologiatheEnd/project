@@ -6,7 +6,7 @@ class GPU::CLI
     puts 'if you wish to list all, enter: all please'
     puts 'If you wish to find one within your spending limit, enter: limit please'
     puts 'If you are looking for a specific attribute, type: find'
-    puts 'If you are finish using this project, please type: "done"'
+    puts 'If you are finish using this project, please type: done'
 
     input = gets.strip
     #input = input.gsub("\n","")
@@ -28,7 +28,7 @@ class GPU::CLI
         GPU.find_item(find_input)
       
       elsif input == "done"
-        puts "t h a n k s!  C o m e  a g a i n  s o o n!"
+        puts "T h a n k s!  C o m e  a g a i n  s o o n!"
         exit!
 
       end
