@@ -13,6 +13,7 @@ class GPU
       @@all.map do |gpu|
         puts gpu.name
         puts "$#{gpu.price}"
+        puts ""
       end
     end
   
@@ -21,9 +22,20 @@ class GPU
         if gpu.price <= int
           puts gpu.name
           puts "$#{gpu.price}"
+          puts ""
+        end
+      end
+    
+    def self.find_item(item)
+      @@all.map do |gpu|
+        if gpu.name.include?(item)
+          puts gpu.name
+          puts "$#{gpu.price}"
+          puts ""
         end
       end
     end
+  end
   
     
     def self.create
