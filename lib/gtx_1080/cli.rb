@@ -1,7 +1,18 @@
 class GPU::CLI
   
-  def call
+  #count how many times self.welcome class method is called upon
+  @@welcome_count = 0
+
+  def self.welcome
     puts "Welcome Human"
+  end
+
+  def call
+    #this is so that "welcome human" only prints once
+    if @@welcome_count < 1
+      self.class.welcome
+      @@welcome_count += 1
+    end
     puts "this program will give has a list of gtx 1080 graphics processing units on ebay"
     puts 'if you wish to list all, enter: all please'
     puts 'If you wish to find one within your spending limit, enter: limit please'
@@ -33,6 +44,7 @@ class GPU::CLI
       
       else 
         puts "that is not a valid command"
+        puts "try again human"
 
       end
       call
