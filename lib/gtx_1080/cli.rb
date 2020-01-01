@@ -30,6 +30,9 @@ class GPU::CLI
       elsif input == "done"
         puts "C o m e  a g a i n  s o o n!"
         exit!
+      
+      else 
+        puts "that is not a valid command"
 
       end
       call
